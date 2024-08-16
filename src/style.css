@@ -1,8 +1,8 @@
 body {
   background: linear-gradient(
-    110.6deg,
-    rgb(184, 142, 252) 2.2%,
-    rgb(104, 119, 244) 100.2%
+    89.7deg,
+    rgb(0, 32, 95) 2.8%,
+    rgb(132, 53, 142) 97.8%
   );
   font-family: "Lato", sans-serif;
 }
@@ -10,7 +10,7 @@ body {
 .app {
   background-color: #c1c0b9;
   max-width: 570px;
-  height: 480px;
+  height: 450px;
   margin: 40px auto;
   padding: 10px;
   box-shadow: #a696c8;
@@ -19,20 +19,21 @@ body {
 }
 
 a {
-  color: #005792;
+  color: #032060;
 }
 
 .app-icon {
   display: flex;
   position: relative;
-  top: -100px;
-  left: 350px;
+  top: -210px;
+  left: 360px;
+  font-size: 40px;
 }
 .unit {
   display: flex;
   position: relative;
-  top: -260px;
-  left: 520px;
+  top: -380px;
+  left: 530px;
   font-size: 30px;
   font-weight: bold;
 }
@@ -40,23 +41,25 @@ a {
 .temp {
   display: flex;
   position: relative;
-  top: -185px;
+  top: -300px;
   left: 450px;
-  font-size: 55px;
+  font-size: 65px;
   font-weight: bold;
 }
 
 .search-form-input {
-  background-color: #b68dfb;
+  background-color: #80358d;
   border: none;
   border-radius: 6px;
   width: 75%;
   padding: 15px 18px;
   font-size: 16px;
+
+  color: white;
 }
 
 .search-form-button {
-  background-color: #717af5;
+  background-color: #032060;
   border: none;
   padding: 14px 27px;
   border-radius: 6px;
@@ -65,19 +68,23 @@ a {
   margin-left: 8px;
 }
 
+.weather-forecast-date {
+  text-align: center;
+}
+
 footer {
-  padding: -60px;
-  margin: 5px;
+  padding: -20px;
+  margin: -75px;
   font-size: 13px;
   text-align: center;
   color: black;
 }
 h1 {
-  color: #005792;
+  color: #032060;
 }
 strong {
-  color: #005792;
+  color: #032060;
 }
 p {
-  color: #393e46;
+  color: #032060;
 }
