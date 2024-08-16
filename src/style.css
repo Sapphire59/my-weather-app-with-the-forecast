@@ -49,13 +49,14 @@ a {
 
 .search-form-input {
   background-color: #80358d;
+
   border: none;
   border-radius: 6px;
   width: 75%;
   padding: 15px 18px;
-  font-size: 16px;
-
-  color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .search-form-button {
