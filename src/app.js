@@ -75,7 +75,7 @@ function displayForecast() {
     <div class="weather-forecast-date">${day}</div>
     <div class="weather-forecast-icon">☀️</div>
     <div class="weather-forecast-temperatures">
-      <div class="weather-forecast-temperature">84°</div>
+      <div class="weather-forecast-temperature">85°</div>
       <div class="weather-forecast-temperature">60°</div>
     </div>
   </div>`;
