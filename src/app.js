@@ -26,6 +26,7 @@ function refreshWeather(response) {
       class ="app-icon"
     />
   `;
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -62,8 +63,14 @@ function handleSearchSubmit(event) {
 
   searchCity(searchInput.value);
 }
+function getForecast(city) {
+  let apiKey = "7eot7c9e36304bbfae357f4a433400e3";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response);
   let days = ["Fri", "Sat", "Sun", "Mon", "Tues"];
   let forecastHtml = "";
 
@@ -87,5 +94,4 @@ function displayForecast() {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Colorado");
-
 displayForecast();
