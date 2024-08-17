@@ -21,14 +21,14 @@ a {
 .app-icon {
   display: flex;
   position: relative;
-  top: -240px;
+  top: -305px;
   left: 360px;
-  font-size: 40px;
+  font-size: 60px;
 }
 .unit {
   display: flex;
   position: relative;
-  top: -420px;
+  top: -470px;
   left: 530px;
   font-size: 30px;
   font-weight: bold;
@@ -37,7 +37,7 @@ a {
 .temp {
   display: flex;
   position: relative;
-  top: -330px;
+  top: -390px;
   left: 450px;
   font-size: 65px;
   font-weight: bold;
@@ -78,7 +78,10 @@ a {
   margin-bottom: 8px;
 }
 .weather-forecast-icon {
-  font-size: 20px;
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
   text-align: center;
 }
 .weather-forecast-temperatures {
@@ -95,7 +98,7 @@ a {
 
 footer {
   padding: -20px;
-  margin: -140px;
+  margin: -180px;
   font-size: 13px;
   text-align: center;
   color: black;
