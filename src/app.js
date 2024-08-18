@@ -67,8 +67,7 @@ function handleSearchSubmit(event) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  return days[date.getDate()];
-  console.log(formatDay);
+  return days[date.getDay()];
 }
 
 function getForecast(city) {
@@ -98,7 +97,8 @@ function displayForecast(response) {
         day.temperature.minimum
       )}°</div>
     </div>
-  </div>`;
+  </div>
+  `;
     }
   });
   let forecastElement = document.querySelector("#forecast");
@@ -108,4 +108,3 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Colorado");
-displayForecast();
